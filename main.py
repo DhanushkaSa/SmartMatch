@@ -5,7 +5,17 @@ from typing import List
 from faker import Faker
 import random
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="SmartMatch Vector API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 fake = Faker()
 
 
