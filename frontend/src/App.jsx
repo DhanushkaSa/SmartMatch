@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /* ───────────────────────────── Constants ────────────────────────────── */
-const API_URL = "http://127.0.0.1:8000/match";
+const API_URL = "http://localhost:8000/match";
 
 const DIMENSION_META = [
   { key: "coding", label: "Coding Proficiency", icon: "⟨/⟩", color: "from-indigo-500 to-violet-500" },
